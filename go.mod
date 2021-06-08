@@ -1,4 +1,4 @@
-module github.com/tmsong/gorm
+module github.com/sjclijie/gorm
 
 go 1.13
 

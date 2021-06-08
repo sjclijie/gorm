@@ -19,11 +19,11 @@ import (
 	"time"
 
 	"github.com/erikstmartin/go-testdb"
-	"github.com/tmsong/gorm"
-	_ "github.com/tmsong/gorm/dialects/mssql"
-	_ "github.com/tmsong/gorm/dialects/mysql"
-	"github.com/tmsong/gorm/dialects/postgres"
-	_ "github.com/tmsong/gorm/dialects/sqlite"
+	"github.com/sjclijie/gorm"
+	_ "github.com/sjclijie/gorm/dialects/mssql"
+	_ "github.com/sjclijie/gorm/dialects/mysql"
+	"github.com/sjclijie/gorm/dialects/postgres"
+	_ "github.com/sjclijie/gorm/dialects/sqlite"
 	"github.com/jinzhu/now"
 )
 

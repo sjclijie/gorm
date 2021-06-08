@@ -25,8 +25,8 @@ var NowFunc = func() time.Time {
 var commonInitialisms = []string{"API", "ASCII", "CPU", "CSS", "DNS", "EOF", "GUID", "HTML", "HTTP", "HTTPS", "ID", "IP", "JSON", "LHS", "QPS", "RAM", "RHS", "RPC", "SLA", "SMTP", "SSH", "TLS", "TTL", "UID", "UI", "UUID", "URI", "URL", "UTF8", "VM", "XML", "XSRF", "XSS"}
 var commonInitialismsReplacer *strings.Replacer
 
-var goSrcRegexp = regexp.MustCompile(`tmsong/gorm(@.*)?/.*.go`)
-var goTestRegexp = regexp.MustCompile(`tmsong/gorm(@.*)?/.*test.go`)
+var goSrcRegexp = regexp.MustCompile(`sjclijie/gorm(@.*)?/.*.go`)
+var goTestRegexp = regexp.MustCompile(`sjclijie/gorm(@.*)?/.*test.go`)
 var queryHelperRegexp = regexp.MustCompile(`helper/mysql/query.go`)
 
 func init() {
