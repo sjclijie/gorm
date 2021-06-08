@@ -866,7 +866,11 @@ func (s *DB) slog(sql string, retryIdx int, t time.Time, db interface{}, vars ..
 			}
 			logPrintFunc(err, l, customLogger(s.Error, retryIdx, t, sql, fileWithLineNum(), s.RowsAffected, db, vars...))
 		} else {
-			s.print("sql", fileWithLineNum(), NowFunc().Sub(t), sql, vars, s.RowsAffected)
+			err := s.Error
+			if err == ErrRecordNotFound {
+				err = nil
+			}
+			s.print("sql", err, fileWithLineNum(), NowFunc().Sub(t), sql, vars, s.RowsAffected)
 		}
 	}
 }
